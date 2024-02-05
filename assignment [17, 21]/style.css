@@ -1,0 +1,43 @@
+/* Assignment 1 */
+.assign-1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: red 0.5px 0.5px, green 1px 1px, blue 1.5px 1.5px;
+}
+
+/* Assignment 3 */
+.one {
+    text-transform: uppercase;
+}
+.two {
+    text-transform: capitalize;
+}
+
+/* Assignment 4 */
+.assign-3-shape-1,
+.assign-3-shape-2,
+.assign-3-shape-3 {
+    padding: 15px;
+    background-color: #eee;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.assign-3-shape-3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Assignment 3 */
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 15px;
+    background-color: cadetblue;
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+    border-bottom: 5px solid green;
+}
