@@ -1,0 +1,102 @@
+/* Assignment 1 */
+.assign-1-shape-1,
+.assign-1-shape-2,
+.assign-1-shape-3 {
+    background-color: blueviolet;
+    /* background-color: rgb(121, 167, 147);
+    background-color: #79a793;
+    background-color: hsl(154, 21%, 56%); */
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.assign-1-shape-2 {
+    background-color: rgba(137, 43, 226, 0.506);
+}
+.assign-1-shape-3 {
+    background-color: rgba(137, 43, 226, 0.165);
+}
+
+/* Assignment 2 */
+.assign-2-shape-1,
+.assign-2-shape-2,
+.assign-2-shape-3,
+.assign-2-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-image: url(x.png);
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.assign-2-shape-2 {
+    background-repeat: repeat-y;
+}
+
+.assign-2-shape-3 {
+    background-repeat: repeat-x;
+}
+
+.assign-2-shape-4 {
+    background-repeat: repeat
+}
+
+/* Assignment 3 */
+.assign-3-shape-1,
+.assign-3-shape-2,
+.assign-3-shape-3,
+.assign-3-shape-4 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    background-image: url(x.png);
+    background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-3-shape-3 {
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-3-shape-4 {
+    background-repeat: repeat;
+}
+
+/* Assignment 4 */
+.assign-4-shape-1,
+.assign-4-shape-2,
+.assign-4-shape-3,
+.assign-4-shape-4 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    margin: 10px 0;
+    background-image: url(x.png);
+    background-repeat: no-repeat;
+}
+
+.assign-4-shape-1 {
+    background-size: 80%;
+}
+
+.assign-4-shape-2 {
+    background-size: 80% 100%;
+    background-position: right;
+}
+
+.assign-4-shape-3 {
+    background-size: 100% 80%;
+    background-position: bottom;
+}
+
+.assign-4-shape-4 {
+    background-size: 50%;
+    background-position: bottom right;
+}
