@@ -28,10 +28,34 @@
 
 /* Assignement 2 */
 .assign-2 {
-    background-color: red;
-    color: white;
-    padding: 20px;
-    border: 1px solid blue;
-    font-size: 80px;
+    width: 500px;
+    font-size: 20px!important;
+    border: none !important;
+    text-align: center;
+    background-color: #eee !important;
+    color: #000 !important;
+    text-indent: -3500px;
+    position: relative;
 }
 
+.assign-2::after {
+    content: "Elzero";
+    position: absolute;
+    top: 17px;
+    left: 2000px;
+}
+
+/* Assignment 3 */
+
+:root {
+    /* --mainColor: #009688;
+    --mainPadding: 10px; */
+}
+
+.assign-3 div {
+    padding: var(--mainPadding, 10px);
+    border: 3px solid var(--mainColor, #000);
+    color: var(--mainColor, red);
+    width: 600px;
+    margin: 20px auto;
+}
