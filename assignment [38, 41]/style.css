@@ -1,0 +1,119 @@
+/* Assignement 1 */
+.assign-1 div {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: inline-block;
+    margin: 20px 20px;
+    counter-increment: name;
+    position: relative;
+    box-shadow: -5px -5px red, 5px 5px blue;
+}
+
+.assign-1 div::after{
+    content: counter(name);
+    color: #fff;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 34px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.assign-1 div::before {
+    content: "Element";
+    text-align: center;
+    line-height: 95px;
+    margin-left: 21px;
+}
+
+/* Assignment 2 */
+.assign-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    box-shadow: inset 0 0 17px 0;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 12px 30px;
+    border-bottom-right-radius: 12px 30px;
+}
+
+/* Assignment 3 */
+
+.parent {
+    margin: 30px auto;
+    width: 550px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.parent .box1,
+.parent .box2 {
+    background-color: #eee;
+    font-size: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.box1 .row-1,
+.box2 .row-1 {
+    background-color: blue;
+    color: #fff;
+    font-size: 25px;
+    margin: 25px 0;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+
+.box2 .row-2, 
+.box1 .row-2 {
+    background-color: #ddd;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 133px;
+    margin-top: 40px;
+}
+
+.or{
+    position: absolute;
+    top: 142px;
+    left: 258px;
+    background: aqua;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.or::after {
+    content: "";
+    position: absolute;
+    top: -134px;
+    left: 17px;
+    width: 2px;
+    height: 131px;
+    background: #00e7ff;
+}
+
+.or::before {
+    content: "";
+    position: absolute;
+    bottom: -115px;
+    left: 17px;
+    width: 2px;
+    height: 111px;
+    background: #00e7ff;
+}
