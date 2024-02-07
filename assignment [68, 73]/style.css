@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+/* Assignment 1 */
+.assign-1 {
+    width: 100px;
+    margin: 40px auto 100px;
+    color: #fff;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+.assign-1::before,
+.assign-1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.assign-1::before {
+    transform: skew(10deg, 10deg);
+}
+
+.assign-1::after {
+    transform: skew(-10deg, -10deg);
+}
+
+/* Assignment 2 */
+.assign-2 {
+    width: 150px;
+    text-align: center;
+    margin: 150px auto;
+    background-color: #009688;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.assign-2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: -1;
+    transform: skew(22deg, 0deg);
+}
+
+.assign-2::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-color: #009688;
+    position: absolute;
+    top: 0;
+    left: -45px;
+    z-index: -1;
+    transform: skew(22deg, 0deg);
+}
+
+/* Assignment 3 */
+.assign-3 {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto 100px;
+    background-color: #607d8b;
+    position: relative;
+    border-bottom: 5px solid #000;
+}
+
+.assign-3::before {
+    content: "Elzero";
+    color: #fff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.assign-3::after {
+    content: "";
+    width: 133px;
+    height: 132px;
+    background-color: black;
+    border: 5px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -71px;
+    left: 29px;
+}
+
+/* Assignment 4 */
+.assign-4 {
+    perspective: 600px; 
+}
+.assign-4 .box {
+    /* background-color: blue; */
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.assign-4 .box::before {
+    content: "Front";
+    color: #fff;
+    font-size: 20px;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+}
+
+.assign-4 .box::after {
+    content: "Back";
+    color: #fff;
+    font-size: 20px;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.assign-4 .box:hover {
+    transform: rotateY(180deg);
+}
