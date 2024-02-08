@@ -1,0 +1,64 @@
+/* Assignment 6 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: #eee;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent div {
+    background-color: #fff;
+    border-bottom: 3px solid orangered;
+    padding: 10px;
+    line-height: 1.3;
+}
+
+.parent div h4 {
+    font-size: 19px;
+}
+
+.parent div h5 {
+    opacity: 0.4;
+    margin: 5px 0 15px;
+    font-size: 16px;
+}
+
+.parent div p:first-of-type {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.parent .one {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.parent .three {
+    grid-area: 1 / 4 / 4 / 4;
+}
+
+.parent .four {
+    grid-area: 2 / 1 / 4 / 1;
+}
+
+.parent .five {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.parent .six {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.parent .three,
+.parent .five,
+.parent .eight {
+    background-color: black;
+    color: #fff;
+}

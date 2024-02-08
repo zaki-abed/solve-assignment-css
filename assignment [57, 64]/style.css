@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Assignment 1 */
+.assign-1 {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 800px;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+    gap: 10px 10px;
+}
+
+.assign-1 div {
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assign-1 .one::before {
+    content: "Element 1";
+}
+
+.assign-1 .two::before {
+    content: "Element 2";
+}
+
+.assign-1 .three::before {
+    content: "Element 3";
+}
+
+.assign-1 .four::before {
+    content: "Element 4"
+}
+
+.assign-1 .five::before {
+    content: "Element 5";
+}
+
+.assign-1 .six::before {
+    content: "Element 6";
+}
+
+/* Assignment 2 */
+.assign-2 {
+    
+}

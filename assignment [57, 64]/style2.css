@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Assignment 2 */
+.layout {
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+        "nav nav nav nav nav nav nav nav nav nav"
+        "section section section section section section section aside aside aside"
+        "footer footer footer footer footer footer footer footer footer footer";
+    grid-template-rows: 50px auto 50px;
+}
+.layout header,
+.layout section,
+.layout aside,
+.layout footer {
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.layout header::before {
+    content: "Header";
+}
+
+.layout section::before {
+    content: "Section"
+}
+
+.layout aside::before {
+    content: "Aside";
+}
+
+.layout footer::before {
+    content: "Footer";
+}
+
+.layout header {
+    grid-area: nav;
+    background-color: blue;
+}
+
+.layout section {
+    grid-area: section;
+    background-color: orange;
+}
+
+.layout aside {
+    grid-area: aside;
+    background-color: orangered;
+}
+
+.layout footer {
+    grid-area: footer;
+    background-color: burlywood;
+}
