@@ -1,0 +1,86 @@
+/* Assignment 1 */
+.assign-1 {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    color: blue;
+    font-size: 30px;
+    position: relative;   
+}
+
+.assign-1::before{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(7deg);
+}
+
+.assign-1::after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-7deg);
+}
+
+/* Assignment 2 */
+.assign-2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.assign-2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    z-index: -1;
+    border-radius: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(101, 101, 213) rgb(101, 101, 213) rgb(101, 101, 213) transparent;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+.assign-2::after {
+    content: "";
+    width: 216px;
+    height: 216px;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    z-index: -1;
+    border-radius: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(213, 101, 209) transparent rgb(213, 101, 209) rgb(213, 101, 209);
+    transition: 0.5s 0.3s;
+}
+
+.assign-2:hover::before {
+    transform: rotate(1turn);
+}
+
+.assign-2:hover::after {
+    transform: rotate(1turn);
+}
